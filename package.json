@@ -6,7 +6,9 @@
     "build": "gulp",
     "start": "python server.py",
     "lint": "eslint .",
-    "autofix": "eslint --fix ."
+    "autofix": "eslint --fix .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "debug": "^2.2.0",
@@ -21,7 +23,8 @@
     "gulp-sass": "^2.3.2",
     "q": "^1.4.1",
     "run-sequence": "^1.2.2",
-    "wrench": "^1.5.8"
+    "wrench": "^1.5.8",
+    "snyk": "^1.83.0"
   },
   "repository": {
     "type": "git",
@@ -34,5 +37,6 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/watson-developer-cloud/answer-retrieval/issues"
-  }
+  },
+  "snyk": true
 }
